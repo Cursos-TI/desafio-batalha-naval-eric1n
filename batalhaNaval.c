@@ -14,11 +14,11 @@ int main()
     {printf(" %c", letra[l]);}
 
     printf(" \n");
-    /linhas do tabuleiro/
+    /*linhas do tabuleiro*/
     for (int i = 0; i < linha; i++)
-    {   /primeira coluna contendo os numeros/
+    {   /*primeira coluna contendo os numeros*/
         printf("%d", i + 1);
-        /colunas do tabuleiro/
+        /*colunas do tabuleiro*/
         for (int j = 0; j < coluna; j++)
         {   
             if ( /condição cruz/
