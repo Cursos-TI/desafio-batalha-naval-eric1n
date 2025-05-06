@@ -9,7 +9,7 @@ int main()
 
     printf("  \nTABULEIRO BATALHA NAVAL  \n \n");
     printf(" ");
-    /primeira linha contendo as letras/
+    /*primeira linha contendo as letras*/
     for (int l = 0; l < 10; l++)
     {printf(" %c", letra[l]);}
 
@@ -21,25 +21,25 @@ int main()
         /*colunas do tabuleiro*/
         for (int j = 0; j < coluna; j++)
         {   
-            if ( /condição cruz/
+            if ( /*condição cruz*/
                 (i == 2 || j == 2)&&(i <= 4 && j <= 4))
             {tabuleiro[i][j] = 1;}
 
-            else if( /condição decaedro/
+            else if( /*condição decaedro*/
                 (i == 5 && (j >= 5 && j <= 9))||
                 (j == 7 && (i >= 3 && i <= 7))||
                 (j == 6 && (i >= 4 && i <= 6))||
                 (j == 8 && (i >= 4 && i <= 6)))
             {tabuleiro[i][j] = 2;} 
 
-            else if( /condição piramide/
+            else if( /*condição piramide*/
                 (i == 8 && (j >= 0 && j <= 4))||
                 (i == 7 && (j >= 1 && j <= 3))||
                 (j == 2 && (i >= 6 && i <= 8)))
             {tabuleiro[i][j] = 3;}
             
             else
-            {   /condição tabuleiro/
+            {   /*condição tabuleiro*/
                 tabuleiro[i][j] = 0;
             }
             printf(" %d", tabuleiro[i][j]);
